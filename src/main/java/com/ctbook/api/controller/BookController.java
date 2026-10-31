@@ -101,5 +101,11 @@ public class BookController {
         return "Book not found!";
     }
 
+    // Documentation
+    @GetMapping("/doc")
+    public String documentation(){
+        return "Use /books to list all of them.\nUse /books/register to register a new book. \nUse /books/update/{id} to update it. \nUse /books/{id} to get a book by id. \nUse books/{id} to delete a book";
+    }
+
     
 }
